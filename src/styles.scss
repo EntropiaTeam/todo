@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    .MuiInputBase-input {
+      color: #000;
+    }
+  }
+  * {
+    box-sizing: border-box;
+  }
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  #root {
+    width: 100%;
+    max-width: 1200px;
+    display: block;
+    margin: 40px auto;
+    padding: 0 30px;
+    text-align: center;
+
+    .MuiListItem-gutters {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  
+  #dialogAction {
+      form {
+        padding:10px 30px 30px 30px;
+        text-align: right;
+        button {
+            margin-top: 20px;
+        }
+      }
+    
+  }
+  
+  #form-dialog-title {
+    padding-top: 30px;
+  }
+
+  .subtitle-button {
+      display: inline-block;
+      padding-right: 30px;
+  }
+
+  .search-text-wrapper {
+      text-align: right;
+      padding: 10px 0;
+  }
+
+  .expandable-line {
+    & > div {
+      & > div {
+        justify-content: space-between;
+      }
+      
+    }
+    button {
+      padding: 0;
+      min-width: 30px;
+      margin-right: 10px;
+      &:first-child {
+        pointer-events: all!important;
+      }
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+
+
+  .customize-bar {
+    margin-top: 30px;
+    display: flex;
+    .picker-wrapper {
+      text-align: left;
+      width: 50%;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+      .picker-wrapper {
+        width: 100%;
+
+        &:first-child {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+ 
